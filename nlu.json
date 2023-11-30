@@ -1,0 +1,71 @@
+{
+    "project": {
+        "id": "zb-cailapub",
+        "name": "zb-cailapub",
+        "folder": "/platform"
+    },
+    "settings": {
+        "language": "zh",
+        "spellingCorrection": false,
+        "classificationAlgorithm": "sts",
+        "validation": {
+            "phraseValidationEnabled": true,
+            "answerValidationEnabled": true,
+            "phraseValidationThreshold": 0.5,
+            "answerValidationThreshold": 0.8
+        },
+        "timezone": "Asia/Shanghai",
+        "extendedSettings": {
+            "useShared": false
+        }
+    },
+    "intents": [
+        {
+            "path": "/bye",
+            "description": null,
+            "answer": null,
+            "customData": null,
+            "enabled": true,
+            "phrases": [
+                {
+                    "text": "而",
+                    "entities": null
+                }
+            ],
+            "patterns": null,
+            "slots": null
+        },
+        {
+            "path": "/hello",
+            "description": null,
+            "answer": null,
+            "customData": null,
+            "enabled": true,
+            "phrases": [
+                {
+                    "text": "嗨",
+                    "entities": null
+                }
+            ],
+            "patterns": null,
+            "slots": null
+        }
+    ],
+    "entities": [],
+    "enabledSystemEntities": [
+        "duckling.number",
+        "duckling.time"
+    ],
+    "systemEntities": [
+        {
+            "name": "duckling.number",
+            "version": "v2",
+            "enabled": true
+        },
+        {
+            "name": "duckling.time",
+            "version": "v2",
+            "enabled": true
+        }
+    ]
+}
